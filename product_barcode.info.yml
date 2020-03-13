@@ -1,0 +1,7 @@
+name: Product barcode block
+type: module
+description: Define a Product barcode custom block.
+core: 8.x
+package: Custom
+dependencies:
+  - block

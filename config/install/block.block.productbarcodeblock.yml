@@ -1,0 +1,29 @@
+uuid: 038cd9d1-4f78-469c-98f0-9ca545738fd3
+langcode: en
+status: true
+dependencies:
+  module:
+    - node
+    - product_barcode
+  theme:
+    - bartik
+id: productbarcodeblock
+theme: bartik
+region: sidebar_second
+weight: 0
+provider: null
+plugin: product_barcode_block
+settings:
+  id: product_barcode_block
+  label: 'Product Barcode Block'
+  provider: product_barcode
+  label_display: '0'
+  my_block_settings: null
+visibility:
+  node_type:
+    id: node_type
+    bundles:
+      product: product
+    negate: false
+    context_mapping:
+      node: '@node.node_route_context:node'
